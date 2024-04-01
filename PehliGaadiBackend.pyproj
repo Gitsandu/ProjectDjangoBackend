@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>PehliGaadiBackend</Name>
+    <RootNamespace>PehliGaadiBackend</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>3e219f94-779a-4dbf-90ea-da8f86ba7180</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>PehliGaadiBackend.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Application\admin.py" />
+    <Compile Include="Application\DTO\APIResponse\APIResponse.py" />
+    <Compile Include="Application\DTO\APIResponse\__init__.py" />
+    <Compile Include="Application\apps.py" />
+    <Compile Include="Application\DTO\Auditable\AuditableRequest.py" />
+    <Compile Include="Application\DTO\Auditable\AuditableResponse.py" />
+    <Compile Include="Application\DTO\Auditable\__init__.py" />
+    <Compile Include="Application\DTO\AuthUser\AuthUserRequest.py" />
+    <Compile Include="Application\DTO\AuthUser\AuthUserResponse.py" />
+    <Compile Include="Application\DTO\AuthUser\__init__.py" />
+    <Compile Include="Application\DTO\Brand\CarBrandRequest.py" />
+    <Compile Include="Application\DTO\Brand\CarBrandResponse.py" />
+    <Compile Include="Application\DTO\Brand\__init__.py" />
+    <Compile Include="Application\DTO\CarDetails\CarDetailsRequest.py" />
+    <Compile Include="Application\DTO\CarDetails\CarDetailsResponse.py" />
+    <Compile Include="Application\DTO\CarDetails\__init__.py" />
+    <Compile Include="Application\DTO\CarImage\CarImageResponse.py" />
+    <Compile Include="Application\DTO\CarImage\__init__.py" />
+    <Compile Include="Application\DTO\CarOverView\CarOverViewRequest.py" />
+    <Compile Include="Application\DTO\CarOverView\CarOverViewResponse.py" />
+    <Compile Include="Application\DTO\CarOverView\__init__.py" />
+    <Compile Include="Application\DTO\CarSpecification\CarSpecificationResponse.py" />
+    <Compile Include="Application\DTO\CarSpecification\__init__.py" />
+    <Compile Include="Application\DTO\__init__.py" />
+    <Compile Include="Application\DTO\EntityResponse\EntityResponseModel.py" />
+    <Compile Include="Application\DTO\EntityResponse\__init__.py" />
+    <Compile Include="Application\DTO\Features\FeatureResponse.py" />
+    <Compile Include="Application\DTO\Features\__init__.py" />
+    <Compile Include="Application\Helpers\APIResponseHelper.py" />
+    <Compile Include="Application\Helpers\__init__.py" />
+    <Compile Include="Application\Interface\AuthUserAbstractService.py" />
+    <Compile Include="Application\Interface\CarBrandAbstractService.py" />
+    <Compile Include="Application\Interface\CarDetailsAbstractService.py" />
+    <Compile Include="Application\Interface\CarImageAbstractServices.py" />
+    <Compile Include="Application\Interface\CarModelAbstractService.py" />
+    <Compile Include="Application\Interface\CarOverViewAbstractService.py" />
+    <Compile Include="Application\Interface\CarVariantAbstactService.py" />
+    <Compile Include="Application\Interface\FeaturesAbstractService.py" />
+    <Compile Include="Application\Interface\LocationAbstractService.py" />
+    <Compile Include="Application\Interface\UserAbstractService.py" />
+    <Compile Include="Application\Interface\__init__.py" />
+    <Compile Include="Application\DTO\Location\LocationRequest.py" />
+    <Compile Include="Application\DTO\Location\LocationResponse.py" />
+    <Compile Include="Application\DTO\Location\__init__.py" />
+    <Compile Include="Application\migrations\__init__.py" />
+    <Compile Include="Application\models.py" />
+    <Compile Include="Application\DTO\Model\CarModelRequest.py" />
+    <Compile Include="Application\DTO\Model\CarModelResponse.py" />
+    <Compile Include="Application\DTO\Model\__init__.py" />
+    <Compile Include="Application\Service\AuthUserService.py" />
+    <Compile Include="Application\Service\BrandService.py" />
+    <Compile Include="Application\Service\CarDetailsService.py" />
+    <Compile Include="Application\Service\CarImageService.py" />
+    <Compile Include="Application\Service\CarOverViewService.py" />
+    <Compile Include="Application\Service\CarSpecificationService.py" />
+    <Compile Include="Application\Service\FeatureService.py" />
+    <Compile Include="Application\Service\JWTAuthentication.py" />
+    <Compile Include="Application\Service\LocationService.py" />
+    <Compile Include="Application\Service\ModelService.py" />
+    <Compile Include="Application\Service\TokenService.py" />
+    <Compile Include="Application\Service\UserService.py" />
+    <Compile Include="Application\Service\VariantService.py" />
+    <Compile Include="Application\Service\__init__.py" />
+    <Compile Include="Application\tests.py" />
+    <Compile Include="Application\DTO\User\UserRequest.py" />
+    <Compile Include="Application\DTO\User\UserResponse.py" />
+    <Compile Include="Application\DTO\User\__init__.py" />
+    <Compile Include="Application\DTO\Variant\CarVariantRequest.py" />
+    <Compile Include="Application\DTO\Variant\CarVariantResponse.py" />
+    <Compile Include="Application\DTO\Variant\__init__.py" />
+    <Compile Include="Application\views.py" />
+    <Compile Include="Application\__init__.py" />
+    <Compile Include="Core\admin.py" />
+    <Compile Include="Core\apps.py" />
+    <Compile Include="Core\BaseEntity\AuditableEntity.py" />
+    <Compile Include="Core\BaseEntity\__init__.py" />
+    <Compile Include="Core\migrations\0001_initial.py" />
+    <Compile Include="Core\migrations\0002_carcompany_carmodel.py" />
+    <Compile Include="Core\migrations\0003_loginuser.py" />
+    <Compile Include="Core\migrations\0004_token_delete_loginuser.py" />
+    <Compile Include="Core\migrations\0005_authuser.py" />
+    <Compile Include="Core\migrations\0006_alter_token_user.py" />
+    <Compile Include="Core\migrations\0007_rename_user_name_authuser_username.py" />
+    <Compile Include="Core\migrations\0008_alter_token_user.py" />
+    <Compile Include="Core\migrations\0009_location.py" />
+    <Compile Include="Core\migrations\0010_carbrand_remove_carmodel_carcompany_and_more.py" />
+    <Compile Include="Core\migrations\0011_carmodel.py" />
+    <Compile Include="Core\migrations\0012_rename_brand_id_carmodel_brand.py" />
+    <Compile Include="Core\migrations\0013_carmodel_logo_url.py" />
+    <Compile Include="Core\migrations\0014_remove_carmodel_logo_url.py" />
+    <Compile Include="Core\migrations\0015_alter_carmodel_brand.py" />
+    <Compile Include="Core\migrations\0016_alter_carmodel_brand.py" />
+    <Compile Include="Core\migrations\0017_cardetails.py" />
+    <Compile Include="Core\migrations\0017_carvariant.py" />
+    <Compile Include="Core\migrations\0018_alter_cardetails_mfd_year.py" />
+    <Compile Include="Core\migrations\0019_rename_brand_cardetails_user.py" />
+    <Compile Include="Core\migrations\0020_merge_20240222_1910.py" />
+    <Compile Include="Core\migrations\0020_merge_20240223_1129.py" />
+    <Compile Include="Core\migrations\0021_merge_20240226_1144.py" />
+    <Compile Include="Core\migrations\0022_caroverview.py" />
+    <Compile Include="Core\migrations\0023_features.py" />
+    <Compile Include="Core\migrations\0024_rename_overview_id_features_overview_and_more.py" />
+    <Compile Include="Core\migrations\0025_carimages.py" />
+    <Compile Include="Core\migrations\0026_cardetails_fueltype_cardetails_seats_and_more.py" />
+    <Compile Include="Core\migrations\0027_features_transmission.py" />
+    <Compile Include="Core\migrations\0027_rename_carimages_carimage.py" />
+    <Compile Include="Core\migrations\0028_remove_features_transmission_carvariant_transmission.py" />
+    <Compile Include="Core\migrations\0029_remove_cardetails_seats.py" />
+    <Compile Include="Core\migrations\0030_alter_cardetails_fueltype_and_more.py" />
+    <Compile Include="Core\migrations\0031_merge_20240306_1103.py" />
+    <Compile Include="Core\migrations\0032_caroverview_image.py" />
+    <Compile Include="Core\migrations\__init__.py" />
+    <Compile Include="Core\models.py" />
+    <Compile Include="Core\Models\AuthUser.py" />
+    <Compile Include="Core\Models\CarBrand.py" />
+    <Compile Include="Core\Models\CarDetails.py" />
+    <Compile Include="Core\Models\CarImage.py" />
+    <Compile Include="Core\Models\CarModel.py" />
+    <Compile Include="Core\Models\CarOverview.py" />
+    <Compile Include="Core\Models\CarSpecification.py" />
+    <Compile Include="Core\Models\CarVariant.py" />
+    <Compile Include="Core\Models\Features.py" />
+    <Compile Include="Core\Models\Location.py" />
+    <Compile Include="Core\Models\Token.py" />
+    <Compile Include="Core\Models\__init__.py" />
+    <Compile Include="Core\tests.py" />
+    <Compile Include="Core\User.py" />
+    <Compile Include="Core\views.py" />
+    <Compile Include="Core\__init__.py" />
+    <Compile Include="Infrastructure\admin.py" />
+    <Compile Include="Infrastructure\apps.py" />
+    <Compile Include="Infrastructure\migrations\__init__.py" />
+    <Compile Include="Infrastructure\models.py" />
+    <Compile Include="Infrastructure\Repository\AbstractRepository.py" />
+    <Compile Include="Infrastructure\Repository\Repository.py" />
+    <Compile Include="Infrastructure\Repository\__init__.py" />
+    <Compile Include="Infrastructure\tests.py" />
+    <Compile Include="Infrastructure\views.py" />
+    <Compile Include="Infrastructure\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="PehliGaadiBackend\__init__.py" />
+    <Compile Include="PehliGaadiBackend\settings.py" />
+    <Compile Include="PehliGaadiBackend\urls.py" />
+    <Compile Include="PehliGaadiBackend\wsgi.py" />
+    <Compile Include="WebAPI\admin.py" />
+    <Compile Include="WebAPI\apps.py" />
+    <Compile Include="WebAPI\Controllers\AuthUserView.py" />
+    <Compile Include="WebAPI\Controllers\BrandView.py" />
+    <Compile Include="WebAPI\Controllers\CarDetailsView.py" />
+    <Compile Include="WebAPI\Controllers\CarImageViewSet.py" />
+    <Compile Include="WebAPI\Controllers\CarOverViewViewset.py" />
+    <Compile Include="WebAPI\Controllers\CarSpecificationViewSet.py" />
+    <Compile Include="WebAPI\Controllers\FeaturesViewSet.py" />
+    <Compile Include="WebAPI\Controllers\LocationView.py" />
+    <Compile Include="WebAPI\Controllers\ModelView.py" />
+    <Compile Include="WebAPI\Controllers\TokenView.py" />
+    <Compile Include="WebAPI\Controllers\UserView.py" />
+    <Compile Include="WebAPI\Controllers\VariantView.py" />
+    <Compile Include="WebAPI\Controllers\__init__.py" />
+    <Compile Include="WebAPI\migrations\__init__.py" />
+    <Compile Include="WebAPI\models.py" />
+    <Compile Include="WebAPI\Serializers\AuthUser\AuthUserRequestSerializer.py" />
+    <Compile Include="WebAPI\Serializers\AuthUser\AuthUserResponseSerializer.py" />
+    <Compile Include="WebAPI\Serializers\AuthUser\__init__.py" />
+    <Compile Include="WebAPI\Serializers\Brand\BrandRequestSerializer.py" />
+    <Compile Include="WebAPI\Serializers\Brand\BrandResponseSeriliazer.py" />
+    <Compile Include="WebAPI\Serializers\Brand\__init__.py" />
+    <Compile Include="WebAPI\Serializers\CarDetails\CarDetailsRequestSeriliazer.py" />
+    <Compile Include="WebAPI\Serializers\CarDetails\CarDetailsResponseSeriliazer.py" />
+    <Compile Include="WebAPI\Serializers\CarDetails\__init__.py" />
+    <Compile Include="WebAPI\Serializers\CarImages\CarImageResponseSerializer.py" />
+    <Compile Include="WebAPI\Serializers\CarImages\__init__.py" />
+    <Compile Include="WebAPI\Serializers\CarOverVIew\CarOverViewRequestSerializer.py" />
+    <Compile Include="WebAPI\Serializers\CarOverVIew\CarOverViewResponseSerializer.py" />
+    <Compile Include="WebAPI\Serializers\CarOverVIew\__init__.py" />
+    <Compile Include="WebAPI\Serializers\CarSpecification\CarSpecificationResponseSerializer.py" />
+    <Compile Include="WebAPI\Serializers\CarSpecification\__init__.py" />
+    <Compile Include="WebAPI\Serializers\Features\FeaturesResponseSerializers.py" />
+    <Compile Include="WebAPI\Serializers\Features\__init__.py" />
+    <Compile Include="WebAPI\Serializers\Location\LocationRequestSerializer.py" />
+    <Compile Include="WebAPI\Serializers\Location\LocationResponseSerializer.py" />
+    <Compile Include="WebAPI\Serializers\Location\__init__.py" />
+    <Compile Include="WebAPI\Serializers\Model\CarModelRequestSeriliazer.py" />
+    <Compile Include="WebAPI\Serializers\Model\CarModelResponseSeriliazer.py" />
+    <Compile Include="WebAPI\Serializers\Model\__init__.py" />
+    <Compile Include="WebAPI\Serializers\Token\TokenPasswordSerlizer.py" />
+    <Compile Include="WebAPI\Serializers\Token\TokenSerializer.py" />
+    <Compile Include="WebAPI\Serializers\Token\__init__.py" />
+    <Compile Include="WebAPI\Serializers\UserSerializer.py" />
+    <Compile Include="WebAPI\Serializers\User\UserRequestSerializer.py" />
+    <Compile Include="WebAPI\Serializers\User\UserResponseSerializer.py" />
+    <Compile Include="WebAPI\Serializers\User\__init__.py" />
+    <Compile Include="WebAPI\Serializers\Variant\CarVariantRequestSerializers.py" />
+    <Compile Include="WebAPI\Serializers\Variant\CarVariantResponseSerializers.py" />
+    <Compile Include="WebAPI\Serializers\Variant\__init__.py" />
+    <Compile Include="WebAPI\Serializers\__init__.py" />
+    <Compile Include="WebAPI\tests.py" />
+    <Compile Include="WebAPI\urls.py" />
+    <Compile Include="WebAPI\views.py" />
+    <Compile Include="WebAPI\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Application\" />
+    <Folder Include="Application\DTO\APIResponse\" />
+    <Folder Include="Application\DTO\APIResponse\__pycache__\" />
+    <Folder Include="Application\DTO\Auditable\" />
+    <Folder Include="Application\DTO\Auditable\__pycache__\" />
+    <Folder Include="Application\DTO\AuthUser\" />
+    <Folder Include="Application\DTO\AuthUser\__pycache__\" />
+    <Folder Include="Application\DTO\Brand\" />
+    <Folder Include="Application\DTO\Brand\__pycache__\" />
+    <Folder Include="Application\DTO\CarDetails\" />
+    <Folder Include="Application\DTO\CarDetails\__pycache__\" />
+    <Folder Include="Application\DTO\CarImage\" />
+    <Folder Include="Application\DTO\CarImage\__pycache__\" />
+    <Folder Include="Application\DTO\CarOverView\" />
+    <Folder Include="Application\DTO\CarOverView\__pycache__\" />
+    <Folder Include="Application\DTO\CarSpecification\" />
+    <Folder Include="Application\DTO\CarSpecification\__pycache__\" />
+    <Folder Include="Application\DTO\EntityResponse\" />
+    <Folder Include="Application\DTO\EntityResponse\__pycache__\" />
+    <Folder Include="Application\DTO\Features\" />
+    <Folder Include="Application\DTO\Features\__pycache__\" />
+    <Folder Include="Application\Helpers\" />
+    <Folder Include="Application\Helpers\__pycache__\" />
+    <Folder Include="Application\Interface\" />
+    <Folder Include="Application\Interface\__pycache__\" />
+    <Folder Include="Application\DTO\Location\" />
+    <Folder Include="Application\DTO\Location\__pycache__\" />
+    <Folder Include="Application\migrations\" />
+    <Folder Include="Application\migrations\__pycache__\" />
+    <Folder Include="Application\DTO\Model\" />
+    <Folder Include="Application\DTO\Model\__pycache__\" />
+    <Folder Include="Application\DTO\" />
+    <Folder Include="Application\Service\" />
+    <Folder Include="Application\Service\__pycache__\" />
+    <Folder Include="Application\DTO\User\" />
+    <Folder Include="Application\DTO\User\__pycache__\" />
+    <Folder Include="Application\DTO\Variant\" />
+    <Folder Include="Application\DTO\Variant\__pycache__\" />
+    <Folder Include="Application\__pycache__\" />
+    <Folder Include="Core\" />
+    <Folder Include="Core\BaseEntity\" />
+    <Folder Include="Core\BaseEntity\__pycache__\" />
+    <Folder Include="Core\migrations\" />
+    <Folder Include="Core\migrations\__pycache__\" />
+    <Folder Include="Core\Models\" />
+    <Folder Include="Core\__pycache__\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Infrastructure\migrations\" />
+    <Folder Include="Infrastructure\migrations\__pycache__\" />
+    <Folder Include="Infrastructure\Repository\" />
+    <Folder Include="Infrastructure\Repository\__pycache__\" />
+    <Folder Include="Infrastructure\__pycache__\" />
+    <Folder Include="PehliGaadiBackend\" />
+    <Folder Include="WebAPI\" />
+    <Folder Include="WebAPI\Controllers\" />
+    <Folder Include="WebAPI\Controllers\__pycache__\" />
+    <Folder Include="WebAPI\migrations\" />
+    <Folder Include="WebAPI\migrations\__pycache__\" />
+    <Folder Include="WebAPI\Serializers\" />
+    <Folder Include="WebAPI\Serializers\AuthUser\" />
+    <Folder Include="WebAPI\Serializers\AuthUser\__pycache__\" />
+    <Folder Include="WebAPI\Serializers\Brand\" />
+    <Folder Include="WebAPI\Serializers\Brand\__pycache__\" />
+    <Folder Include="WebAPI\Serializers\CarDetails\" />
+    <Folder Include="WebAPI\Serializers\CarDetails\__pycache__\" />
+    <Folder Include="WebAPI\Serializers\CarImages\" />
+    <Folder Include="WebAPI\Serializers\CarImages\__pycache__\" />
+    <Folder Include="WebAPI\Serializers\CarOverVIew\" />
+    <Folder Include="WebAPI\Serializers\CarOverVIew\__pycache__\" />
+    <Folder Include="WebAPI\Serializers\CarSpecification\" />
+    <Folder Include="WebAPI\Serializers\CarSpecification\__pycache__\" />
+    <Folder Include="WebAPI\Serializers\Features\" />
+    <Folder Include="WebAPI\Serializers\Features\__pycache__\" />
+    <Folder Include="WebAPI\Serializers\Location\" />
+    <Folder Include="WebAPI\Serializers\Location\__pycache__\" />
+    <Folder Include="WebAPI\Serializers\Model\" />
+    <Folder Include="WebAPI\Serializers\Model\__pycache__\" />
+    <Folder Include="WebAPI\Serializers\Token\" />
+    <Folder Include="WebAPI\Serializers\Token\__pycache__\" />
+    <Folder Include="WebAPI\Serializers\User\" />
+    <Folder Include="WebAPI\Serializers\User\__pycache__\" />
+    <Folder Include="WebAPI\Serializers\Variant\" />
+    <Folder Include="WebAPI\Serializers\Variant\__pycache__\" />
+    <Folder Include="WebAPI\Serializers\__pycache__\" />
+    <Folder Include="WebAPI\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Application\DTO\APIResponse\__pycache__\APIResponse.cpython-312.pyc" />
+    <Content Include="Application\DTO\APIResponse\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Application\DTO\Auditable\__pycache__\AuditableRequest.cpython-312.pyc" />
+    <Content Include="Application\DTO\Auditable\__pycache__\AuditableResponse.cpython-312.pyc" />
+    <Content Include="Application\DTO\Auditable\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Application\DTO\AuthUser\__pycache__\AuthUserRequest.cpython-312.pyc" />
+    <Content Include="Application\DTO\AuthUser\__pycache__\AuthUserResponse.cpython-312.pyc" />
+    <Content Include="Application\DTO\AuthUser\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Application\DTO\Brand\__pycache__\CarBrandRequest.cpython-312.pyc" />
+    <Content Include="Application\DTO\Brand\__pycache__\CarBrandResponse.cpython-312.pyc" />
+    <Content Include="Application\DTO\Brand\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Application\DTO\CarDetails\__pycache__\CarDetailsRequest.cpython-312.pyc" />
+    <Content Include="Application\DTO\CarDetails\__pycache__\CarDetailsResponse.cpython-312.pyc" />
+    <Content Include="Application\DTO\CarDetails\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Application\DTO\CarImage\__pycache__\CarImageResponse.cpython-312.pyc" />
+    <Content Include="Application\DTO\CarImage\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Application\DTO\CarOverView\__pycache__\CarOverViewResponse.cpython-312.pyc" />
+    <Content Include="Application\DTO\CarOverView\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Application\DTO\CarSpecification\__pycache__\CarSpecificationResponse.cpython-312.pyc" />
+    <Content Include="Application\DTO\CarSpecification\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Application\DTO\EntityResponse\__pycache__\EntityResponseModel.cpython-312.pyc" />
+    <Content Include="Application\DTO\EntityResponse\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Application\DTO\Features\__pycache__\FeatureResponse.cpython-312.pyc" />
+    <Content Include="Application\DTO\Features\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Application\Helpers\__pycache__\APIResponseHelper.cpython-312.pyc" />
+    <Content Include="Application\Helpers\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Application\Interface\__pycache__\AbstractService.cpython-312.pyc" />
+    <Content Include="Application\Interface\__pycache__\AuthUserAbstractService.cpython-312.pyc" />
+    <Content Include="Application\Interface\__pycache__\CarBrandAbstractService.cpython-312.pyc" />
+    <Content Include="Application\Interface\__pycache__\CarDetailsAbstractService.cpython-312.pyc" />
+    <Content Include="Application\Interface\__pycache__\CarImageAbstractService.cpython-312.pyc" />
+    <Content Include="Application\Interface\__pycache__\CarImageAbstractServices.cpython-312.pyc" />
+    <Content Include="Application\Interface\__pycache__\CarModelAbstractService.cpython-312.pyc" />
+    <Content Include="Application\Interface\__pycache__\CarOverViewAbstractService.cpython-312.pyc" />
+    <Content Include="Application\Interface\__pycache__\CarVariantAbstactService.cpython-312.pyc" />
+    <Content Include="Application\Interface\__pycache__\FeaturesAbstractService.cpython-312.pyc" />
+    <Content Include="Application\Interface\__pycache__\LocationAbstractService.cpython-312.pyc" />
+    <Content Include="Application\Interface\__pycache__\UserAbstractService.cpython-312.pyc" />
+    <Content Include="Application\Interface\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Application\DTO\Location\__pycache__\LocationRequest.cpython-312.pyc" />
+    <Content Include="Application\DTO\Location\__pycache__\LocationResponse.cpython-312.pyc" />
+    <Content Include="Application\DTO\Location\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Application\migrations\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Application\DTO\Model\__pycache__\CarModelRequest.cpython-312.pyc" />
+    <Content Include="Application\DTO\Model\__pycache__\CarModelResponse.cpython-312.pyc" />
+    <Content Include="Application\DTO\Model\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Application\Service\__pycache__\AuthUserService.cpython-312.pyc" />
+    <Content Include="Application\Service\__pycache__\BrandService.cpython-312.pyc" />
+    <Content Include="Application\Service\__pycache__\CarDetailsService.cpython-312.pyc" />
+    <Content Include="Application\Service\__pycache__\CarImageService.cpython-312.pyc" />
+    <Content Include="Application\Service\__pycache__\CarOverViewService.cpython-312.pyc" />
+    <Content Include="Application\Service\__pycache__\CarSpecificationService.cpython-312.pyc" />
+    <Content Include="Application\Service\__pycache__\FeatureService.cpython-312.pyc" />
+    <Content Include="Application\Service\__pycache__\JWTAuthentication.cpython-312.pyc" />
+    <Content Include="Application\Service\__pycache__\LocationService.cpython-312.pyc" />
+    <Content Include="Application\Service\__pycache__\LoginUserService.cpython-312.pyc" />
+    <Content Include="Application\Service\__pycache__\ModelService.cpython-312.pyc" />
+    <Content Include="Application\Service\__pycache__\TokenService.cpython-312.pyc" />
+    <Content Include="Application\Service\__pycache__\UserService.cpython-312.pyc" />
+    <Content Include="Application\Service\__pycache__\VariantService.cpython-312.pyc" />
+    <Content Include="Application\Service\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Application\DTO\User\__pycache__\UserRequest.cpython-312.pyc" />
+    <Content Include="Application\DTO\User\__pycache__\UserResponse.cpython-312.pyc" />
+    <Content Include="Application\DTO\User\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Application\DTO\Variant\__pycache__\CarVariantRequest.cpython-312.pyc" />
+    <Content Include="Application\DTO\Variant\__pycache__\CarVariantResponse.cpython-312.pyc" />
+    <Content Include="Application\DTO\Variant\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Application\__pycache__\admin.cpython-312.pyc" />
+    <Content Include="Application\__pycache__\apps.cpython-312.pyc" />
+    <Content Include="Application\__pycache__\models.cpython-312.pyc" />
+    <Content Include="Application\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Core\BaseEntity\__pycache__\AuditableEntity.cpython-312.pyc" />
+    <Content Include="Core\BaseEntity\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0001_initial.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0002_carcompany_carmodel.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0003_loginuser.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0003_rename_car_company_carmodel_carcompanyid.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0004_token_delete_loginuser.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0005_authuser.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0006_alter_token_user.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0007_rename_user_name_authuser_username.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0008_alter_token_user.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0009_location.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0010_carbrand_remove_carmodel_carcompany_and_more.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0010_rename_carcompany_carbrand_delete_carmodel.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0011_carmodel.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0012_rename_brand_id_carmodel_brand.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0013_carmodel_logo_url.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0014_remove_carmodel_logo_url.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0015_alter_carmodel_brand.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0016_alter_carmodel_brand.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0017_cardetails.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0017_carvariant.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0018_alter_cardetails_mfd_year.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0019_rename_brand_cardetails_user.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0020_merge_20240222_1910.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0020_merge_20240223_1129.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0021_merge_20240226_1144.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0022_caroverview.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0023_features.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0024_rename_overview_id_features_overview_and_more.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0025_carimages.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0026_cardetails_fueltype_cardetails_seats_and_more.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0027_features_transmission.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0027_rename_carimages_carimage.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0028_remove_features_transmission_carvariant_transmission.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0029_remove_cardetails_seats.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0030_alter_cardetails_fueltype_and_more.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0031_merge_20240306_1103.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\0032_caroverview_image.cpython-312.pyc" />
+    <Content Include="Core\migrations\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\admin.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\apps.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\AuthUser.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\CarBrand.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\CarCompany.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\CarDetails.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\CarImage.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\CarImages.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\CarModel.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\CarOverview.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\CarSpecification.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\CarVariant.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\Features.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\Location.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\LoginUser.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\models.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\Token.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\User.cpython-312.pyc" />
+    <Content Include="Core\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Infrastructure\migrations\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Infrastructure\Repository\__pycache__\AbstractRepository.cpython-312.pyc" />
+    <Content Include="Infrastructure\Repository\__pycache__\Repository.cpython-312.pyc" />
+    <Content Include="Infrastructure\Repository\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="Infrastructure\__pycache__\admin.cpython-312.pyc" />
+    <Content Include="Infrastructure\__pycache__\apps.cpython-312.pyc" />
+    <Content Include="Infrastructure\__pycache__\models.cpython-312.pyc" />
+    <Content Include="Infrastructure\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+    <Content Include="WebAPI\Controllers\__pycache__\AuthUserView.cpython-312.pyc" />
+    <Content Include="WebAPI\Controllers\__pycache__\BrandView.cpython-312.pyc" />
+    <Content Include="WebAPI\Controllers\__pycache__\CarDetailsView.cpython-312.pyc" />
+    <Content Include="WebAPI\Controllers\__pycache__\CarImageView.cpython-312.pyc" />
+    <Content Include="WebAPI\Controllers\__pycache__\CarImageViewSet.cpython-312.pyc" />
+    <Content Include="WebAPI\Controllers\__pycache__\CarOverViewViewset.cpython-312.pyc" />
+    <Content Include="WebAPI\Controllers\__pycache__\CarSpecificationViewSet.cpython-312.pyc" />
+    <Content Include="WebAPI\Controllers\__pycache__\FeaturesViewSet.cpython-312.pyc" />
+    <Content Include="WebAPI\Controllers\__pycache__\LocationView.cpython-312.pyc" />
+    <Content Include="WebAPI\Controllers\__pycache__\LoginUserView.cpython-312.pyc" />
+    <Content Include="WebAPI\Controllers\__pycache__\ModelView.cpython-312.pyc" />
+    <Content Include="WebAPI\Controllers\__pycache__\TokenView.cpython-312.pyc" />
+    <Content Include="WebAPI\Controllers\__pycache__\UserView.cpython-312.pyc" />
+    <Content Include="WebAPI\Controllers\__pycache__\UserViewSet.cpython-312.pyc" />
+    <Content Include="WebAPI\Controllers\__pycache__\VariantView.cpython-312.pyc" />
+    <Content Include="WebAPI\Controllers\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="WebAPI\migrations\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\AuthUser\__pycache__\AuthUserRequestSerializer.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\AuthUser\__pycache__\AuthUserResponseSerializer.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\AuthUser\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\Brand\__pycache__\BrandRequestSerializer.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\Brand\__pycache__\BrandResponseSeriliazer.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\Brand\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\CarDetails\__pycache__\CarDetailsRequestSeriliazer.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\CarDetails\__pycache__\CarDetailsResponseSeriliazer.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\CarDetails\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\CarImages\__pycache__\CarImageResponseSerializer.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\CarImages\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\CarOverVIew\__pycache__\CarOverViewResponseSerializer.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\CarOverVIew\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\CarSpecification\__pycache__\CarSpecificationResponseSerializer.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\CarSpecification\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\Features\__pycache__\FeaturesResponseSerializers.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\Features\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\Location\__pycache__\LocationRequestSerializer.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\Location\__pycache__\LocationResponseSerializer.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\Location\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\Model\__pycache__\CarModelRequestSeriliazer.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\Model\__pycache__\CarModelResponseSeriliazer.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\Model\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\Token\__pycache__\TokenPasswordSerlizer.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\Token\__pycache__\TokenSerializer.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\Token\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\User\__pycache__\UserRequestSerializer.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\User\__pycache__\UserResponseSerializer.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\User\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\Variant\__pycache__\CarVariantRequestSerializers.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\Variant\__pycache__\CarVariantResponseSerializers.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\Variant\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\__pycache__\UserSerializer.cpython-312.pyc" />
+    <Content Include="WebAPI\Serializers\__pycache__\__init__.cpython-312.pyc" />
+    <Content Include="WebAPI\__pycache__\admin.cpython-312.pyc" />
+    <Content Include="WebAPI\__pycache__\apps.cpython-312.pyc" />
+    <Content Include="WebAPI\__pycache__\models.cpython-312.pyc" />
+    <Content Include="WebAPI\__pycache__\urls.cpython-312.pyc" />
+    <Content Include="WebAPI\__pycache__\UserSerializer.cpython-312.pyc" />
+    <Content Include="WebAPI\__pycache__\views.cpython-312.pyc" />
+    <Content Include="WebAPI\__pycache__\__init__.cpython-312.pyc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
